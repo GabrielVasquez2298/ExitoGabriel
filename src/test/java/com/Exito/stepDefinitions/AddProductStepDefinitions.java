@@ -42,20 +42,23 @@ public class AddProductStepDefinitions {
     }
     @Y("the off-road bike category is selected")
     public void selectMountainBikes() {
+
         addProductSteps.ClickMountainBikes();
     }
-    @Cuando("the user identifies the product")
+   @Cuando("the user identifies the product")
     public void clickOnTheAddButton() {
-        // Write code here that turns the phrase above into concrete actions
+        //addProductSteps.getInfoProduct();
 
     }
     @Y("click on the add button")
     public void clickAddButton() {
+        addProductSteps.btnAddCar();
+
 
     }
     @Cuando("the user enters the shopping cart")
     public void theUserEntersTheShoppingCart() {
-        // Write code here that turns the phrase above into concrete actions
+        addProductSteps.btnMyCart();
 
     }
     @Entonces("the user will be able to view the added product")

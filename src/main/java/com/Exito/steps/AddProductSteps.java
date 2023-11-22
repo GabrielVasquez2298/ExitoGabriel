@@ -30,4 +30,21 @@ public class AddProductSteps {
     public void ClickPopUp(){
         addProductExito.getDriver().findElement(addProductExito.getBtnClosePopUp()).click();
     }
+/*
+    @Step("the user identifies the product")
+    public void getInfoProduct(){
+        String product=addProductExito.getDriver().findElement(addProductExito.getGetInfoProduct()).getText();}
+
+*/
+
+    @Step("click on the add button")
+    public void btnAddCar(){
+        addProductExito.getDriver().findElement(addProductExito.getBtnAddCart()).click();
+
+    }
+
+    @Step ("the user enters the shopping cart")
+        public void btnMyCart(){
+        addProductExito.getDriver().findElement(addProductExito.getBtnMyCart()).click();
+        }
 }
