@@ -71,7 +71,7 @@ public class AddProductStepDefinitions {
     }
     @Entonces("the user will be able to view the added product")
     public void theUserWillBeAbleToViewTheAddedProduct() {
-        // Write code here that turns the phrase above into concrete actions
+
         addProductSteps.isSameProduct();
     }
 

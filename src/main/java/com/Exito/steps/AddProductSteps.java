@@ -18,6 +18,11 @@ java.lang.String product2;
         addProductExito.openUrl("https://www.exito.com/");
     }
 
+    @Step("Click on pop up")
+    public void ClickPopUp(){
+        addProductExito.getDriver().findElement(addProductExito.getBtnClosePopUp()).click();
+    }
+
     @Step("Click on the principal menu")
     public void ClickMenu(){
         addProductExito.getDriver().findElement(addProductExito.getBtnMenu()).click();
@@ -35,19 +40,12 @@ java.lang.String product2;
         addProductExito.getDriver().findElement(addProductExito.getBtnMountainBikes()).click();
     }
 
-    @Step("Click on pop up")
-    public void ClickPopUp(){
-        addProductExito.getDriver().findElement(addProductExito.getBtnClosePopUp()).click();
-    }
 
     @Step("the user identifies the product")
     public void getInfoProduct(){
         product1=addProductExito.getDriver().findElement(addProductExito.getInfoProduct()).getText();
 
-
     }
-
-
 
 
     @Step("click on the add button")
@@ -67,6 +65,8 @@ java.lang.String product2;
         addProductExito.getDriver().findElement(addProductExito.getTxtCorreo()).sendKeys("gabo@gmail.com");
         addProductExito.getDriver().findElement(addProductExito.getBtnConfirm()).click();
     }
+
+    //In this step we will compare if we got the same product
     @Step("the user will be able to view the added product")
 
     public void isSameProduct(){
