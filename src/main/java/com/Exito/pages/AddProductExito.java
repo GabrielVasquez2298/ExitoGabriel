@@ -2,6 +2,7 @@ package com.Exito.pages;
 import net.serenitybdd.core.pages.PageObject;
 
 import org.openqa.selenium.By;
+import java.lang.String;
 public class AddProductExito extends PageObject {
 
 
@@ -35,10 +36,13 @@ public class AddProductExito extends PageObject {
 
 
 
-    private By getInfoProduct = By.xpath("/html/body/div[2]/div/div[1]/div/div[3]/div/div[9]/section/div[2]/div/div[2]/section/div/div/div/div[7]/div/div/div/div/div[2]/section/a/article/div[2]/div[2]/div/div/div/div[1]/div/div/div[3]/div/div/div[1]/h3/span");
-    public By getGetInfoProduct() {
-        return getInfoProduct;
+
+    private By InfoProduct = By.xpath("//*[@id=\"gallery-layout-container\"]/div[2]/section/a/article/div[2]/div[2]/div/div/div/div[1]/div/div/div[3]/div/div/div[1]/h3/span");
+
+    public By getInfoProduct() {
+        return InfoProduct;
     }
+
 
 
 
@@ -53,4 +57,25 @@ public class AddProductExito extends PageObject {
     public By getBtnMyCart() {
         return btnMyCart;
     }
+
+
+
+    private By txtCorreo = By.xpath("//*[@id=\"render-store.custom.checkout-io\"]/div/div[1]/div/div[1]/div/div/div/div[2]/div[5]/div/div/form/div[4]/input");
+    public By getTxtCorreo() {
+        return txtCorreo;
+    }
+
+
+
+    private By btnConfirm = By.xpath("//*[@id=\"render-store.custom.checkout-io\"]/div/div[1]/div/div[1]/div/div/div/div[2]/div[5]/div/div/form/button");
+    public By getBtnConfirm() {
+        return btnConfirm;
+    }
+
+
+    private By sameProduct = By.xpath("//*[@id=\"render-store.custom.checkout-io\"]/div/div[1]/div/div[1]/div/div/div/div[2]/div[4]/div[1]/div/div[2]/div/div/div[4]/span");
+    public By getAddedProduct() {
+        return sameProduct;
+    }
+
 }

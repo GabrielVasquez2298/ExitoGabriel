@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0216917-6974-48b2-a496-a74c00b44db6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Exito/pages/AddProductExito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Exito/pages/AddProductExito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Exito/steps/AddProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Exito/steps/AddProductSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/Exito/stepDefinitions/AddProductStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Exito/stepDefinitions/AddProductStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feautres/AddProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feautres/AddProduct.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/0650fc8e94974ed66e233e87d79e1b527454c972d51e929123d03945abff59cd.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0650fc8e94974ed66e233e87d79e1b527454c972d51e929123d03945abff59cd.csv" afterDir="false" />
@@ -109,7 +109,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Gabriel/Documents/ProjectExito/ExitoGabriel/ExitoGabriel",
+    "last_opened_file_path": "C:/Users/Gabriel/Desktop/NuevoRepo/AutomatizacionOccidente",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",

@@ -11,6 +11,7 @@
         Cuando the user identifies the product
         Y click on the add button
         Y the user enters the shopping cart
+        Y User inserts the credentials and confirm
         Entonces the user will be able to view the added product
 
 

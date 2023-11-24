@@ -8,9 +8,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 public class AddProductStepDefinitions {
 
     @Steps
@@ -35,9 +33,11 @@ public class AddProductStepDefinitions {
     public void openPrincipalMenu() {
         addProductSteps.ClickMenu();;
     }
+
     @Y("sports category is selected")
     public void selectSports() {
         addProductSteps.ClickSports();
+
 
     }
     @Y("the off-road bike category is selected")
@@ -47,24 +47,32 @@ public class AddProductStepDefinitions {
     }
    @Cuando("the user identifies the product")
     public void clickOnTheAddButton() {
-        //addProductSteps.getInfoProduct();
+
+        addProductSteps.getInfoProduct();
+
 
     }
+
+
     @Y("click on the add button")
     public void clickAddButton() {
         addProductSteps.btnAddCar();
 
 
     }
-    @Cuando("the user enters the shopping cart")
+    @Y("the user enters the shopping cart")
     public void theUserEntersTheShoppingCart() {
         addProductSteps.btnMyCart();
 
     }
+    @Y("User inserts the credentials and confirm")
+    public void addCredentialsConfirm(){
+        addProductSteps.AddEmailAndConfirm();
+    }
     @Entonces("the user will be able to view the added product")
     public void theUserWillBeAbleToViewTheAddedProduct() {
         // Write code here that turns the phrase above into concrete actions
-
+        addProductSteps.isSameProduct();
     }
 
 

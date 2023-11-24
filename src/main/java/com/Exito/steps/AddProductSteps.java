@@ -3,8 +3,13 @@ package com.Exito.steps;
 import com.Exito.pages.AddProductExito;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
+
+
 public class AddProductSteps {
 
+java.lang.String product1;
+
+java.lang.String product2;
     @Page
     AddProductExito addProductExito;
 
@@ -17,10 +22,14 @@ public class AddProductSteps {
     public void ClickMenu(){
         addProductExito.getDriver().findElement(addProductExito.getBtnMenu()).click();
     }
+
+
     @Step("Click on the Sports category")
     public void ClickSports(){
+
         addProductExito.getDriver().findElement(addProductExito.getBtnSports()).click();
     }
+
     @Step("Click on Mountain Bike")
     public void ClickMountainBikes(){
         addProductExito.getDriver().findElement(addProductExito.getBtnMountainBikes()).click();
@@ -30,12 +39,16 @@ public class AddProductSteps {
     public void ClickPopUp(){
         addProductExito.getDriver().findElement(addProductExito.getBtnClosePopUp()).click();
     }
-/*
+
     @Step("the user identifies the product")
     public void getInfoProduct(){
-        String product=addProductExito.getDriver().findElement(addProductExito.getGetInfoProduct()).getText();}
+        product1=addProductExito.getDriver().findElement(addProductExito.getInfoProduct()).getText();
 
-*/
+
+    }
+
+
+
 
     @Step("click on the add button")
     public void btnAddCar(){
@@ -44,7 +57,36 @@ public class AddProductSteps {
     }
 
     @Step ("the user enters the shopping cart")
-        public void btnMyCart(){
+    public void btnMyCart(){
         addProductExito.getDriver().findElement(addProductExito.getBtnMyCart()).click();
-        }
+
+    }
+
+    @Step("User inserts the credentials and confirm")
+    public void AddEmailAndConfirm() {
+        addProductExito.getDriver().findElement(addProductExito.getTxtCorreo()).sendKeys("gabo@gmail.com");
+        addProductExito.getDriver().findElement(addProductExito.getBtnConfirm()).click();
+    }
+    @Step("the user will be able to view the added product")
+
+    public void isSameProduct(){
+         product2 =addProductExito.getDriver().findElement(addProductExito.getAddedProduct()).getText();
+         if(product1.equals(product2)) {
+
+
+             System.out.println("*****************************************************************************************************************");
+             System.out.println("es el mismo producto");
+             System.out.println(product1);
+             System.out.println(product2);
+         }else{
+             System.out.println("*****************************************************************************************************************");
+             System.out.println("No es el mismo");
+             System.out.println(product1);
+             System.out.println(product2);
+         }
+
+
+    }
+
+
 }
